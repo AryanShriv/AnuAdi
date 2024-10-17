@@ -1,0 +1,121 @@
+/* HeroSection.css */
+
+/* Hero Section Layout */
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  padding: 0 80px;
+  background: linear-gradient(135deg, #031233, #1a3b88); /* Soft gradient background */
+  color: white;
+  overflow: hidden;
+}
+
+/* Overlay for subtle dark tint on background */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+  z-index: 1;
+}
+
+/* Container for text and image */
+.hero-container {
+  position: relative;
+  z-index: 2; /* Keep content above the overlay */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Hero Text */
+.hero-text {
+  max-width: 50%;
+  animation: fadeInLeft 1s ease-in-out; /* Smooth text entry */
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  color: #ffffff; /* Pure white for contrast */
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #d1d1d1; /* Light grey for softer contrast */
+}
+
+.hero-btn {
+  margin-top: 40px;
+  padding: 12px 30px;
+  background-color: #306FF5;
+  color: white;
+  border: none;
+  border-radius: 30px; /* Rounded corners for elegance */
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #001ba3; /* Slightly darker blue on hover */
+  transform: scale(1.05); /* Grows slightly on hover */
+}
+
+/* Hero Image */
+.hero-image img {
+  width: 50vh;
+  animation: fadeInRight 1s ease-in-out; /* Smooth image entry */
+}
+
+/* Keyframe Animations */
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-text, .hero-image {
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-btn {
+    width: 100%;
+    margin-top: 30px;
+  }
+}

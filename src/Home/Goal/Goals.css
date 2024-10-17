@@ -1,0 +1,43 @@
+/* GoalsSection.css */
+
+.goals {
+    padding: 60px 80px;
+    background-color: #ffffff; /* Soft background for elegance */
+    text-align: center;
+  }
+  
+  .goals h2 {
+    font-size: 2.5rem;
+    color: #031233; /* Dark color for headings */
+    margin-bottom: 20px;
+  }
+  
+  .goal-quote {
+    font-size: 1.8rem; /* Larger font for the quote */
+    color: #000000;
+    font-style: italic; /* Italic for the quote */
+    margin: 20px 0;
+    position: relative; /* Position for decoration */
+  }
+  
+  .goal-quote:before {
+    left: -30px; /* Adjust position for left quotation mark */
+    top: -30px; /* Adjust position for left quotation mark */
+  }
+  
+  .goal-quote:after {
+    right: -30px; /* Adjust position for right quotation mark */
+    bottom: -30px; /* Adjust position for right quotation mark */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .goals {
+      padding: 40px 20px; /* Adjust padding for smaller screens */
+    }
+  
+    .goal-quote {
+      font-size: 1.5rem; /* Smaller font for smaller screens */
+    }
+  }
+  
