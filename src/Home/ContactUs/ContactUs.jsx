@@ -1,57 +1,76 @@
 import React from "react";
+import { FaPhoneAlt, FaEnvelope, FaClock } from "react-icons/fa"; // Importing React Icons
 import "./ContactUs.css";
-import { HiOutlineArrowUpRight } from "react-icons/hi2";
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { BsTwitterX } from "react-icons/bs";
 
-const ContactSection = () => {
+const ContactUs = () => {
   return (
-    <section id="ContactUs" className="contact-section">
-      <div className="contact-content">
-        <h1 className="contact-heading">
-          LET'S WORK <br /> TOGETHER
-        </h1>
-        </div>
-      <div className="contact-info">
-        <div className="contact-item">
-          <h3 className="contact-title">
-            <div className="contact-link">
-              PHONE{" "}
-              <span className="arrow">
-                <HiOutlineArrowUpRight />
-              </span>
+    <section className="contact-us" id="contactus">
+      <div className="container">
+        <div className="contact-content">
+          <div className="contact-info">
+            <h2>Need a hand?</h2>
+            <p>
+              We’re here to help you with your IT needs. Reach out to our team
+              today.
+            </p>
+            <div className="contact-details">
+              <div className="contact-item">
+                <FaPhoneAlt size={24} color="#4fa3f7" />
+                <div>
+                  <h4>Call us</h4>
+                  <p>+91 871 456 08 28</p>
+                </div>
+              </div>
+              <div className="contact-item">
+                <FaEnvelope size={24} color="#4fa3f7" />
+                <div>
+                  <h4>Email us</h4>
+                  <p>info@affordmate.com</p>
+                </div>
+              </div>
+              <div className="contact-item">
+                <FaClock size={24} color="#4fa3f7" />
+                <div>
+                  <h4>Business Hours</h4>
+                  <p>Mon - Fri: 9 AM - 5 PM</p>
+                </div>
+              </div>
             </div>
-          </h3>
-          <p className="contact-details">(+91) - 9876543210</p>
-        </div>
-        <div className="contact-item">
-          <h3 className="contact-title">
-            <div className="contact-link">
-              SOCIAL LINKS{" "}
-              <span className="arrow">
-                <HiOutlineArrowUpRight />
-              </span>
-            </div>
-          </h3>
-          <p className="contact-details">
-            <a
-              href="https://m.facebook.com"
-              className="si"
-            >
-              <FaFacebook />
-            </a>{" "}
-            <a href="https://twitter.com/" className="si">
-              <BsTwitterX />
-            </a>{" "}
-            <a href="https://www.instagram.com/" className="si">
-              <FaInstagram />
-            </a>
-          </p>
+          </div>
+
+          <div className="contact-form">
+            <h3>Send us a message</h3>
+            <form>
+              <div className="form-field">
+                <input type="text" placeholder="Your Name" required />
+              </div>
+              <div className="form-field">
+                <input type="email" placeholder="Your Email" required />
+              </div>
+              <div className="form-field">
+                <select required>
+                  <option value="">Select Service</option>
+                  <option value="web-design">Web Design</option>
+                  <option value="mobile-app">Mobile App Development</option>
+                  <option value="seo">SEO Services</option>
+                  <option value="ecommerce">E-commerce</option>
+                </select>
+              </div>
+              <div className="form-field">
+                <textarea
+                  placeholder="Tell us about your project"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" className="submit-btn">
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default ContactSection;
+export default ContactUs;

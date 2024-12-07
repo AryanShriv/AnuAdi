@@ -1,75 +1,63 @@
-/* AboutUsSection.css */
-
 .about-us {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  padding: 40px; /* General padding */
-  background-color: #f7f9fc;
-  position: relative;
-  border-radius: 15px;
+  justify-content: space-between;
+  padding: 60px 20px;
+  background-color: #ffffff; /* White background */
 }
 
-.about-content {
+.about-us-content {
   flex: 1;
-  padding-right: 40px; /* Increased padding for more space */
+  max-width: 50%;
+  padding: 20px;
 }
 
-.about-content h2 {
-  font-size: 2rem; /* Size for the main title */
-  color: #333; /* Dark color for readability */
-  margin-bottom: 15px;
+.about-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333; /* Dark text */
+  margin-bottom: 1rem;
 }
 
-.about-content h3 {
-  font-size: 2.5rem; /* Larger size for emphasis */
-  color: #222; /* Slightly darker color for emphasis */
-  margin-bottom: 15px;
-  line-height: 1.2; /* Tighten line height for better visual appeal */
+.about-description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
-.about-content p {
-  color: #555; /* Gray text for paragraphs */
-  line-height: 1.6; /* Comfortable line spacing */
-  margin-bottom: 20px;
-  text-align: justify;
+.read-more {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-.cta-button {
-  padding: 10px 20px;
-  background-color: #306FF5; /* Button color */
-  color: white; /* Text color */
-  border: none; /* Remove border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor */
-  font-size: 1rem; /* Button font size */
+.read-more:hover {
+  color: #0056b3;
 }
 
-.about-image {
-  flex: 1; /* Take the remaining space */
+.about-us-image {
+  flex: 1;
+  max-width: 50%;
 }
 
-.about-image img {
-  max-width: 100%; /* Responsive image */
+.about-us-image img {
+  width: 100%;
+  height: auto;
   border-radius: 10px;
-  width: 50vh;
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
   .about-us {
-    flex-direction: column; /* Stack elements on smaller screens */
-    padding: 20px; /* Adjust padding for smaller screens */
+    flex-direction: column;
   }
 
-  .about-content {
-    padding-right: 0; /* Remove padding on small screens */
-  }
-
-  .about-content h2 {
-    font-size: 1.5rem; /* Smaller font for smaller screens */
-  }
-
-  .about-content h3 {
-    font-size: 2rem; /* Smaller font for smaller screens */
+  .about-us-content,
+  .about-us-image {
+    max-width: 100%;
+    text-align: center;
   }
 }

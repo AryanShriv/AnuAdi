@@ -1,9 +1,16 @@
-.container{
-    width: 1200px;
-    margin: 0 auto;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .highlight {
-    color: #306FF5;
+  color: #306ff5;
+}
+
+/* Responsive */
+@media (max-width: 450px) {
+  p{
+    text-align: justify;
   }
-  
+}

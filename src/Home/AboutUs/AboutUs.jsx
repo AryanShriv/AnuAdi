@@ -1,26 +1,27 @@
-// AboutUsSection.jsx
-import React from 'react';
-import './AboutUs.css';
-import aboutImage from '../../Assets/Logo/Logo.png'; // Replace with your actual image path
+import React from "react";
+import "./AboutUs.css";
+import aboutImage from "../../Assets/About Us/Office setting.jpg"; 
 
-const AboutUsSection = () => {
+const AboutUs = () => {
   return (
-    <section className="about-us container">
-      <div className="about-content">
-        <h2>About Us</h2>
-        <h3>
-          Helping businesses deliver <span className="highlight">exceptional buyer experiences.</span>
-        </h3>
-        <p>
-          Vidyard is the leading video messaging and asynchronous communications platform for go-to-market teams. Millions of sales professionals and more than 250,000 go-to-market teams use Vidyard’s AI-powered video messaging, video hosting, and digital sales rooms to connect with more prospects and generate more revenue.
+    <div className="about-us container" id="aboutus">
+      <div className="about-us-content">
+        <h2 className="about-title">WHO WE ARE</h2>
+        <p className="about-description">
+          We are a bunch of techies passionate about technology and the infinite
+          possibilities it creates. At Affordmate, we collaborate with our
+          customers to bring their vision to reality. With top-quality IT
+          solutions, we are ready to implement innovation for your business.
         </p>
-        <button className="cta-button">Sign Up for Free</button>
+        <a href="#contactus" className="read-more">
+          Read More
+        </a>
       </div>
-      <div className="about-image">
+      <div className="about-us-image">
         <img src={aboutImage} alt="About Us" />
       </div>
-    </section>
+    </div>
   );
 };
 
-export default AboutUsSection;
+export default AboutUs;

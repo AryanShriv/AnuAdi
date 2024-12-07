@@ -1,43 +1,40 @@
-/* GoalsSection.css */
+.our-wish {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9; /* Light gray background */
+}
 
-.goals {
-    padding: 60px 80px;
-    background-color: #ffffff; /* Soft background for elegance */
-    text-align: center;
-  }
-  
-  .goals h2 {
-    font-size: 2.5rem;
-    color: #031233; /* Dark color for headings */
-    margin-bottom: 20px;
-  }
-  
-  .goal-quote {
-    font-size: 1.8rem; /* Larger font for the quote */
-    color: #000000;
-    font-style: italic; /* Italic for the quote */
-    margin: 20px 0;
-    position: relative; /* Position for decoration */
-  }
-  
-  .goal-quote:before {
-    left: -30px; /* Adjust position for left quotation mark */
-    top: -30px; /* Adjust position for left quotation mark */
-  }
-  
-  .goal-quote:after {
-    right: -30px; /* Adjust position for right quotation mark */
-    bottom: -30px; /* Adjust position for right quotation mark */
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .goals {
-      padding: 40px 20px; /* Adjust padding for smaller screens */
-    }
-  
-    .goal-quote {
-      font-size: 1.5rem; /* Smaller font for smaller screens */
-    }
-  }
-  
+.wish-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333; /* Dark text */
+  margin-bottom: 1rem;
+}
+
+.wish-text {
+  font-size: 1.1rem;
+  color: #555; /* Slightly lighter text */
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+}
+
+.wish-button {
+  background-color: #007bff; /* Blue color */
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.wish-button a {
+  text-decoration: none;
+  color: white;
+}
+
+.wish-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

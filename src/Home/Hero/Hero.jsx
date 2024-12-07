@@ -1,22 +1,25 @@
-// HeroSection.jsx
-import React from 'react';
-import './Hero.css';
+import React from "react";
+import "./Hero.css";
 
-import Logo from "../../Assets/Logo/Logo.png"
+import BG from "../../Assets/Hero/BG.mp4"
 
 const HeroSection = () => {
   return (
-    <section className="hero">
+    <section className="hero-section">
+      <div className="hero-video">
+        <video
+          className="background-video"
+          src={BG}
+          autoPlay
+          loop
+          muted
+        ></video>
+      </div>
       <div className="overlay"></div>
-      <div className="hero-container">
-        <div className="hero-text">
-          <h1>Transforming IT for Your Future</h1>
-          <p>Innovative solutions tailored for your business growth and success.</p>
-          <button className="hero-btn">Explore Solutions</button>
-        </div>
-        <div className="hero-image">
-          <img src={Logo} alt="Tech Illustration" />
-        </div>
+      <div className="hero-content">
+        <p>We are the technocrats</p>
+        <h1>We create the Digital Presence of the businesses</h1>
+        
       </div>
     </section>
   );

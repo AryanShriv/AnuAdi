@@ -1,94 +1,195 @@
-.contact-section {
-    color: #000000;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    border-radius: 15px;
+.contact-us {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+  color: #fff;
 }
 
 .contact-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-    margin-bottom: 50px;
-}
-
-.contact-heading {
-    font-size: 120px;
-    font-weight: bold;
-    margin: 0;
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 900;
-}
-
-.contact-arrow {
-    font-size: 3em;
-    margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .contact-info {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    max-width: 1200px;
+  width: 45%;
 }
 
-.contact-item {
-    max-width: 30%;
+.contact-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 
-.contact-title {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    color: #000000;
+.contact-info p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #b0b0b0;
 }
 
 .contact-details {
-    font-size: 1em;
-    line-height: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.contact-details a {
-    color: #000000;
-    text-decoration: none;
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-.contact-details a:hover {
-    text-decoration: underline;
+.contact-item i {
+  font-size: 1.8rem;
+  color: #4fa3f7;
 }
 
-.si {
-    padding: 5px;
+.contact-item h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  color: #fff;
 }
 
-@media screen and (max-width: 768px) {
-    .contact-section {
-        padding: 20px;
-    }
+.contact-item p {
+  font-size: 1rem;
+  color: #ddd;
+}
 
-    .contact-heading {
-        font-size: 54px;
-    }
+.contact-form {
+  width: 50%;
+  background: #2d3748;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
 
-    .contact-content,
-    .contact-info {
-        flex-direction: column;
-        align-items: flex-start;
-        max-width: 100%;
-        margin-bottom: 0;
-    }
+.contact-form h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
 
-    .contact-arrow {
-        align-self: flex-end;
-    }
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #3e4e5e;
+  color: #fff;
+  outline: none;
+  transition: 0.3s ease;
+}
 
-    .contact-item {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border: 2px solid #4fa3f7;
+}
+
+.form-field textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #4fa3f7;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #357ab7;
+}
+
+/* Uniform styling for all input fields */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  background-color: #2a2a2a;
+  border: 1px solid #555;
+  border-radius: 8px;
+  color: white;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* For focus effect */
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #1e90ff;
+  box-shadow: 0 0 5px rgba(30, 144, 255, 0.7);
+}
+
+/* Styling for the textarea */
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* For select dropdown */
+select {
+  appearance: none; /* Remove default dropdown icon */
+  background: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2210%22 height=%2210%22 viewBox=%220 0 10 10%22%3E%3Cpath d=%22M9 3l-4 4-4-4%22 fill=%22none%22 stroke=%22%23fff%22 stroke-width=%221.5%22/%3E%3C/svg%3E")
+    no-repeat right 15px center;
+  background-size: 10px;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+  background-color: #1e90ff;
+  border: none;
+  color: white;
+  padding: 14px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #4682b4;
+}
+
+/* For input fields with icons (like Google icon) */
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.input-container input {
+  flex-grow: 1;
+  padding-left: 20px; /* Adjust padding to leave space for the icon */
+}
+
+.input-container .icon {
+  position: absolute;
+  left: 10px;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 450px) {
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-form {
+    width: 78%;
+    padding: 30px;
+  }
 }
