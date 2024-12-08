@@ -17,7 +17,7 @@ const HeroSection = () => {
       </div>
       <div className="overlay"></div>
       <div className="hero-content">
-        <p>We are the technocrats</p>
+        <h4>We are the technocrats</h4>
         <h1>We create the Digital Presence of the businesses</h1>
         
       </div>

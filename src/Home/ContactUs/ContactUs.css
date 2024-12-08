@@ -188,8 +188,8 @@ button[type="submit"]:hover {
     flex-direction: column;
   }
 
-  .contact-form {
-    width: 78%;
-    padding: 30px;
+  .contact-form, 
+  .contact-info {
+    width: fit-content;
   }
 }

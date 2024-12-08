@@ -38,24 +38,36 @@ const Navbar = () => {
 
       <ul className={`nav-links ${isMobile ? "active" : ""}`}>
         <li>
-          <a href="#">Home</a>
+          <a href="/#" onClick={() => setIsMobile(false)}>
+            Home
+          </a>
         </li>
         <li>
-          <a href="#aboutus">About</a>
+          <a href="#aboutus" onClick={() => setIsMobile(false)}>
+            About
+          </a>
         </li>
         <li>
-          <a href="#servicesSec">Services</a>
+          <a href="#servicesSec" onClick={() => setIsMobile(false)}>
+            Services
+          </a>
         </li>
         <li>
-          <a href="#contactus">Contact</a>
+          <a href="#contactus" onClick={() => setIsMobile(false)}>
+            Contact
+          </a>
         </li>
       </ul>
 
-      <div className="hamburger" onClick={toggleMenu}>
+      <div
+        className={`hamburger ${isMobile ? "active" : ""}`}
+        onClick={toggleMenu}
+      >
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
       </div>
+      
     </nav>
   );
 };
